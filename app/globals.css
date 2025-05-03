@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-red: #FF0000;
+  --primary-blue: #0099FF;
+}
+
+@layer base {
+  body {
+    @apply text-gray-800;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-blue rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-red;
+}
+
+/* Form focus styles */
+input:focus, 
+select:focus, 
+textarea:focus {
+  @apply outline-none ring-2 ring-primary-blue ring-opacity-50;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+} 
