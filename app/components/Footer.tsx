@@ -94,12 +94,11 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-6">Get In Touch</h3>
             <ul className="space-y-3">
               <li className="text-gray-400">
-                123 Business Street, Suite 100
-                New York, NY 10001
+                Doha, Qatar
               </li>
               <li>
                 <a href="tel:+1234567890" className="text-gray-400 hover:text-white transition">
-                  +1 (234) 567-890
+                  +974 5555 5555
                 </a>
               </li>
               <li>

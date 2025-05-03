@@ -31,7 +31,7 @@ export default function About() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2 grid grid-cols-2 gap-4">
-            <div className="relative h-[200px] overflow-hidden rounded-lg bg-gray-200">
+            <div className="relative md:h-[200px] h-[0px] overflow-hidden rounded-lg bg-gray-200 hidden md:block">
               <Image
                 src="/about-1.jpg"
                 alt="Cleaning Service"
@@ -44,7 +44,7 @@ export default function About() {
                 onLoad={() => handleImageLoad('image1')}
               />
             </div>
-            <div className="relative h-[200px] mt-8 overflow-hidden rounded-lg bg-gray-200">
+            <div className="relative md:h-[200px] h-[0px] mt-8 overflow-hidden rounded-lg bg-gray-200 hidden md:block">
               <Image
                 src="/about-2.jpg"
                 alt="Pest Control Service"
@@ -56,7 +56,7 @@ export default function About() {
                 onLoad={() => handleImageLoad('image2')}
               />
             </div>
-            <div className="relative h-[200px] -mt-8 overflow-hidden rounded-lg bg-gray-200">
+            <div className="relative h-[200px] -mt-8 overflow-hidden rounded-lg bg-gray-200 hidden md:block">
               <Image
                 src="/about-3.jpg"
                 alt="Commercial Cleaning"
@@ -68,10 +68,10 @@ export default function About() {
                 onLoad={() => handleImageLoad('image3')}
               />
             </div>
-            <div className="relative h-[200px]">
+            <div className="relative md:h-[200px] hidden md:block">
               <div className="absolute inset-0 bg-primary-blue rounded-lg flex items-center justify-center text-white text-4xl font-bold">
                 25+
-                <span className="text-lg ml-2">Years<br/>Experience</span>
+                <span className="text-lg ml-2 hidden sm:inline">Years<br/>Experience</span>
               </div>
             </div>
           </div>
